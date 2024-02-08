@@ -9,6 +9,11 @@
     margin: 0 auto;
 }
 
+body {
+    background: url("../img/CodeRepublics-html.jpg") no-repeat;
+    background-size: cover;
+}
+
 .navbar {
     width: 100%;
     display: flex;
@@ -38,10 +43,16 @@
     .container {
         width: 768px;
     }
+    .center .img img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .container {
+        width: 100%;
+    }
+    .center .img img {
         width: 100%;
     }
 }
@@ -102,6 +113,9 @@
         width: 100px;
         height: 280px;
     }
+    .center .img img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -118,11 +132,22 @@
 .left {
     width: 230px;
     margin-top: 30px;
+    height: 300px;
+    color: white;
+    font-weight: 500;
+}
+
+h1 {
+    color: white;
+    font-size: 35px;
 }
 
 .right {
     width: 230px;
     margin-top: 30px;
+    height: 300px;
+    color: white;
+    font-weight: 500;
 }
 
 .center-img img {
@@ -136,4 +161,32 @@
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 30px;
+}
+
+.img img {
+    width: 940px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+}
+
+.title h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text-link a {
+    text-decoration: none;
+    color: rgb(0, 200, 255);
 }
