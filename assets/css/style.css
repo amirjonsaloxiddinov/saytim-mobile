@@ -115,6 +115,8 @@ body {
     }
     .center .img img {
         width: 100%;
+        height: 200px;
+        margin-top: 50px;
     }
 }
 
