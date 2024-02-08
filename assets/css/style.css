@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(49, 45, 45);
+}
+
+.right-navs {
+    display: flex;
+}
+
+.link {
+    padding: 12px 16px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: red;
+}
+
+.link:hover {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+@media screen and (max-width: 940px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .navbar {
+        background-color: transparent !important;
+    }
+    .left-navs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .right-navs {
+        width: 100%;
+        position: fixed;
+        bottom: 20px;
+        gap: 20px;
+        justify-content: center;
+    }
+    .right-navs .link {
+        width: 50px;
+        height: 50px;
+        font-size: 1px;
+        color: transparent;
+        position: relative;
+        border-radius: 100px;
+    }
+    .right-navs .link::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 30px;
+    }
+    .right-navs .link:nth-child(1):before {
+        content: "O'";
+        background-color: green;
+        border-radius: 50%;
+    }
+    .right-navs .link:nth-child(2):before {
+        content: "A";
+        background: red;
+        border-radius: 50%;
+    }
+    .right-navs .link:nth-child(3):before {
+        content: "Ad";
+        background-color: blue;
+        border-radius: 50%;
+    }
+    .center-img img {
+        width: 100px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .right-navs {
+        gap: 10px;
+    }
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 230px;
+    margin-top: 30px;
+}
+
+.right {
+    width: 230px;
+    margin-top: 30px;
+}
+
+.center-img img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
