@@ -129,6 +129,7 @@ body {
     .top {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     .top .left {
         margin-bottom: 30px;
